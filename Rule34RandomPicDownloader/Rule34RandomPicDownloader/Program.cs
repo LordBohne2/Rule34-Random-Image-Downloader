@@ -128,7 +128,7 @@ while (counter < howManyDownloads)
     }
 
     // Get Page Link
-    var a = doc.QuerySelectorAll("div.content > span.thumb > a"); // Get all Images Links
+    var a = doc.QuerySelectorAll("div.content > div.image-list > span.thumb > a"); // Get all Images Links
     Console.WriteLine($"Found {a.Length} Images on the URL: {url}");
     string href = a[rnd.Next(a.Length)].GetAttribute("href"); // Get random Page
     Console.WriteLine($"Go to: {href}");
