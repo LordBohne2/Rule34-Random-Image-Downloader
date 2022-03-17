@@ -79,7 +79,7 @@ while (counter < howManyDownloads)
     counter++;
     Console.WriteLine("Image: " + counter);
 
-    if (select == 1)
+    if (select == 1) // Tag
     {
         do
         {
@@ -117,7 +117,7 @@ while (counter < howManyDownloads)
             doc = await context.OpenAsync(req => req.Content(html));
         }
     }
-    else
+    else // Without Tag
     {   // Not more than 200000 supportet *blank site*
         url = $"https://rule34.xxx/index.php?page=post&s=list&tags=all&pid={rnd.Next(200000)}"; // Ramdom All
 
